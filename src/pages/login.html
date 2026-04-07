@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <!-- arquivo para anjinho mexer -->
+    <main>
+        <header class="header">
+            <div class="header-container">
+                <h1>Chat Connect</h1>
+                <a href="#">Sobre Nós</a>
+            </div>
+        </header>
+        
+        <section class="login">
+            <div class="info-container">
+                <h1>Chat Connect</h1>
+                <h5>Suas conversas protegidas e criptografadas <br> com tecnologia de ponta a ponta</h5>
+            </div>
+            <form action="login-form" class="login-form">
+                <h1>LOGIN</h1>
+                <div class="email" name="email">
+                    <label for="email">Email</label>
+                    <i class="ph ph-envelope-simple"></i>
+                    <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                </div>
+                <div class="password" name="password">
+                    <label for="password">Password</label>
+                    <i class="ph ph-lock-key"></i>
+                    <input type="password" name="password" id="password" required placeholder="Digite sua senha">
+                </div>
+                <button class="submit" type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
