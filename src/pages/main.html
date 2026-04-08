@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversas</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- arquivo pra anjinho mexer -->
+    
+<main>
+    <div class="left-elements">
+        <header class="side-header">
+            <div class="perfil-item" onclick="abrirPerfil()">
+                <span class = "perfil-item" id="perfil-logo"><img src="res/anjinho.jfif" alt="perfil"></span>
+            </div>
+            <div class="status">
+                <span class="nome">Kauã Victor</span>
+                <span class="statusOn">Online</span>
+            </div>
+            <nav class="side-header-nav">
+                <button class="btn-acess" onclick="abrirAcessibilidade()"><i class="ph ph-person-arms-spread"></i></button>
+                <button class="btn-conf" onclick="abrirConfiguracoes()"><i class="ph ph-gear"></i></button>
+            </nav>
+        </header>
+                    <aside class="side-bar">
+                        <div class="chat-item">
+                <span class="perfil-item" onclick="verPerfil()"><img src="res/eduardo.jfif" alt="perfil1"></span>
+
+                <div class="chat-item-main">
+                    <div class="chat-item-status">
+                        <span class="nome-item">Eduardo</span>
+                        <span class="status-item">Active</span>
+                    </div>
+
+                    <div class="mensagem-item-main">
+                        <span class="mensagem-item">Vou comer Lucas</span>
+                    </div>
+                </div>
+                <div class="chat-info-item">
+                    <span class="hora-item">10:19</span>
+                    <span class="novas-mensagens-item"></span>
+                </div>
+            </div>
+            <div class="chat-item">
+                <span class="perfil-item" id="perfil-side"><img src="res/everton.jfif" alt="perfil1"></span>
+
+                <div class="chat-item-main">
+                    <div class="chat-item-status">
+                        <span class="nome-item">Everton</span>
+                        <span class="status-item">Active</span>
+                    </div>
+
+                    <div class="mensagem-item-main">
+                        <span class="mensagem-item">Gostosa</span>
+                    </div>
+                </div>
+
+                <div class="chat-info-item">
+                    <span class="hora-item">09:50</span>
+                    <span class="novas-mensagens-item">67</span>
+                </div>
+            </div>
+            <div class="chat-item">
+                <span class="perfil-item"><img src="res/lucas.jfif" alt="perfil1"></span>
+
+                <div class="chat-item-main">
+                    <div class="chat-item-status">
+                        <span class="nome-item">Lucas dos Anjos</span>
+                        <span class="status-item">active</span>
+                    </div>
+
+                    <div class="mensagem-item-main">
+                        <span class="mensagem-item">Tem agulha ai?</span>
+                    </div>
+                </div>
+
+                <div class="chat-info-item">
+                    <span class="hora-item">08:33</span>
+                    <span class="novas-mensagens-item">666</span>
+                </div>
+            </div>
+            <div class="chat-item">
+                <span class="perfil-item"><img src="res/anjinho.jfif" alt="perfil1"></span>
+                <div class="chat-item-main">
+                    <div class="chat-item-status">
+                        <span class="nome-item">Wallace</span>
+                        <span class="status-item">Active</span>
+                    </div>
+
+                    <div class="mensagem-item-main">
+                        <span class="mensagem-item">ei, lucas quer furar minhas boch...</span>
+                    </div>
+                </div>
+                <div class="chat-info-item">
+                    <span class="hora-item">08:22</span>
+                    <span class="novas-mensagens-item">67</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+        <section class="chat-area">
+            <header class="chat-header">
+                <div class="chat-left">
+                    <div class = "perfil-item" id="chat-perfil" onclick="abrirPerfil()">
+                <img src="res/eduardo.jfif" alt="perfil3">
+            </div>
+            <div class="chat-status">
+                <span class="chat-nome">Eduardo</span>
+                <span class="chat-status-on">Online</span>
+            </div>
+                </div>
+            <nav class="chat-header-nav">
+                <button class="btn-ligar" onclick="ligar()"><i class="ph ph-phone"></i></button>
+                <button class="btn-ligar-video" onclick="ligarVideo()"><i class="ph ph-video-camera"></i></button>
+            </nav>
+        </header>
+        <div class="chat-messages">
+            <ul>
+                <li class="message-received" id="message-received">oi</li>
+                <li class="message-sent" id="message-sent">fala</li>
+                <li class="message-received" id="message-received">Vou comer lucas</li>
+            </ul>
+        </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Digite uma mensagem...">
+                <button>Enviar</button>
+            </div>
+        </section>
+</main>
+    
+</body>
+</html>
