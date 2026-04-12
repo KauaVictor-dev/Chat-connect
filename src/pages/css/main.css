@@ -192,8 +192,11 @@ main {
     flex-direction: column;
     justify-content: center;
     font-size: 0.8em;
+    
 }
-
+.mensagem-item-main ul {
+    list-style: none;
+}
 
 
 .chat-info-item {
@@ -409,21 +412,138 @@ main {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+    
 }
 
 #configPanel {
+    display: flex;
     position: fixed;
     top: 20px;
     left: 0;
 
     
-    width: 42%;
+    width: 98%;
     height: 80%;
-    border-radius: 10px;
+    border-radius: 20px;
 
-    background-color: #111f33;
+    background-color: #111f335a;
     color: white;
+    background: transparent;
+    backdrop-filter: blur(5px);
 
     z-index: 9999;
+}
+#config-left {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(217, 33%, 17%, 0.532);
+    padding: 10px;
+    border-radius: 5px;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+
+    width: 40%;
+}
+
+#config-left span {
+    display: flex;
+    justify-content: center;
+}
+
+#config-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#config-nav button {
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: 0.3s;
+}
+#config-nav button:hover {
+    transform: translateX(-3px);
+    background-color: var(--cor-destaque);
+}
+#config-nav button:active {
+    transform: scale(0.8);
+}
+
+#config-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(145deg, hsl(217, 33%, 17%), hsl(217, 30%, 12%));
+    width: 60%;
+    padding: 20px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+#config-perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+
+#config-perfil-edit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+    align-items: stretch;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+
+#config-perfil input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+}
+
+#config-perfil input:focus {
+    border: 1px solid var(--cor-terciaria);
+    box-shadow: 0 0 8px var(--cor-terciaria);
+}
+
+
+#config-perfil button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cor-terciaria);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#config-perfil button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--cor-terciaria);
+}
+#config-perfil button:active {
+    transform: scale(0.9);
 }

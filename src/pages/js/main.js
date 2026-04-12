@@ -27,3 +27,17 @@ document.getElementById("input").addEventListener("keydown", function(e) {
         enviarMensagem();
     }
 });
+
+function abrirConfiguracoes() {
+    const painel = document.getElementById("configPanel")
+
+    painel.classList.remove("hidden")
+
+}
+
+function fecharConfiguracoes() {
+    const painel = document.getElementById("configPanel")
+
+    painel.classList.add("hidden")
+}
+

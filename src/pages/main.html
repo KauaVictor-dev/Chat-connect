@@ -21,11 +21,42 @@
                 <span class="statusOn">Online</span>
             </div>
             <div class="hidden" id="configPanel">
-
+                <div id="config-left">
+                    <span>Configurações</span>
+                    <div class="config-nav" id="config-nav">
+                        <button>Perfil</button>
+                        <button>Conta</button>
+                        <button>Privacidade</button>
+                        <button>Notificações</button>
+                        <button>Aparência</button>
+                        <button>Segurança</button>
+                        <button>Ajuda</button>
+                        <button onclick="fecharConfiguracoes()">Fechar</button>
+                    </div>
+                </div>                
+                <div id="config-perfil">
+                    <div id="config-perfil-info">
+                    <h1>Configurações</h1>
+                    <h4>Perfil<h4>                        
+                    </div>
+                    <div id="config-perfil-edit">
+                        <span><img src="" alt=""></span>
+                        <h1>Anjinho</h1>
+                        <button>Editar Foto de Perfil</button>
+                    </div>
+                    <div id="config-perfil-edit-user">
+                        <form action="username">
+                            <div class="username">
+                                <label >Username</label>
+                                <input type="text" id="username">
+                            </div>                        
+                        </form>
+                    </div>
+                </div>
             </div>
             <nav class="side-header-nav">
                 <button class="btn-acess" onclick=""><i class="ph ph-person-arms-spread"></i></button>
-                <button class="btn-conf" onclick=""><i class="ph ph-gear"></i></button>
+                <button class="btn-conf" onclick="abrirConfiguracoes()" id="btnConfig"><i class="ph ph-gear"></i></button>
             </nav>
         </header>
                     <aside class="side-bar">
